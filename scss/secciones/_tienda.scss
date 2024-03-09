@@ -1,0 +1,51 @@
+.tienda {
+    background-color: rgb(64, 60, 68);
+
+    img {
+        width: 100vw;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px;
+        padding: 40px;
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        color: rgb(207, 121, 189);
+        margin: 10px 0px 0px 0px;
+        text-decoration: solid;
+    }
+
+    article {
+        margin: 40px;
+    }
+
+    &__producto {
+        p {
+            text-align: center;
+            color: black;
+        }
+
+        img {
+            width: 280px;
+        }
+    }
+}
+
+.producto {
+    margin: 40px;
+
+    p {
+        text-align: center;
+        color: black;
+    }
+
+    img {
+        width: 280px;
+    }
+}

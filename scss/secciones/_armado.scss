@@ -1,0 +1,131 @@
+.armado {
+    background-color: rgb(64, 60, 68);
+
+    h1 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(207, 121, 189);
+        margin: 20px 0px 0px 0px;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    article {
+        display: inline-block;
+        margin: 10px;
+        background-color: rgb(204, 202, 206);
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+    img {
+        width: 160px;
+    }
+
+    &__encabezado{
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(64, 60, 68);
+        }
+        img {
+            width: 95vw;
+        }  
+    }
+    &__hardware {
+        img {
+            width: 90vw;
+            padding: 10px 20px;
+            background-color: rgb(204, 202, 206);
+        }
+    }
+    &__video {
+        iframe {
+            width: 50vw;
+        }
+    }
+}
+
+.p-armado-2,
+.p-armado-3 {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .armado__encabezado img {
+        width: 100vw;
+    }
+    .armado__video iframe {
+        width: 87vw;
+        padding: 8px 40px;
+    }
+
+    .p-armado-1 {
+        display: none;
+    }
+
+    .p-armado-2 {
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    .armado__hardware img {
+        width: 95vw;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .armado__video iframe {
+        width: 93vw;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .armado__hardware img {
+        width: 93vw;
+        padding: 8px 12px;
+    }
+    .armado__video iframe {
+        width: 93vw;
+        padding: 8px 12px;
+    }
+
+    .p-armado-2 {
+        display: none;
+    }
+
+    .p-armado-3 {
+        display: block;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .armado img {
+        width: 125px;
+    }
+    .armado__hardware img {
+        width: 93vw;
+        padding: 8px 12px;
+    }   
+    .armado__encabezado img {
+        width: 100vw;
+    }
+    .armado__video iframe {
+        width: 100vw;
+    }
+
+}
