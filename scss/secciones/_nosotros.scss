@@ -1,40 +1,32 @@
 .nosotros {
-    h1 {
-        color: aliceblue;
-        background-color: rgb(64, 60, 68);
-        text-align: center;
-        text-decoration: solid;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
-        margin: 20px 0px 0px 0px;
-    }
-
-    p {
-        color: aliceblue;
-        background-color: rgb(64, 60, 68);
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0px 90px;
-    }
-
-    h2 {
-        color: aliceblue;
-        background-color: rgb(64, 60, 68);
-        text-align: center;
-        text-decoration: solid;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 20px 0px 0px 0px;
-    }
-
     article {
         background-color: rgb(64, 60, 68);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
 
-    img {
-        width: 80vw;
+        h1 {
+            color: aliceblue;
+            background-color: rgb(64, 60, 68);
+            text-align: center;
+            text-decoration: solid;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin: 20px 0px 0px 0px;
+
+        }
+
+        p {
+            color: aliceblue;
+            background-color: rgb(64, 60, 68);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px 90px;
+        }
+
+        img {
+            width: 80vw;
+        }
     }
 }
 

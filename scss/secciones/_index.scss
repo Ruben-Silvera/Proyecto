@@ -4,33 +4,26 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-    }
 
-    h1 {
-        background-color: rgb(64, 60, 68);
-        color: rgb(211, 163, 200);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center;
-        text-decoration: solid;
-        margin: 20px 0px 0px 0px;
-    }
+        img {
+            width: 95vw;
 
-    img {
-        width: 95vw;
-    }
+            .promocion-2,
+            .promocion-3 {
+                display: none;
+            }
+        }
 
-    h2 {
-        padding: 15px;
-        background-color: rgb(64, 60, 68);
-        color: rgb(211, 163, 200);
+        h1 {
+            background-color: rgb(64, 60, 68);
+            color: rgb(211, 163, 200);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            text-decoration: solid;
+            margin: 20px 0px 0px 0px;
+        }
     }
 }
-
-.promocion-2,
-.promocion-3 {
-    display: none;
-}
-
 
 @media (max-width: 1000px) {
     .main img {
@@ -70,15 +63,10 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 10px;
-        }
 
-        img {
-            width: 300px;
-        }
-
-        h2 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 20px 0px 0px 0px;
+            img {
+                width: 300px;
+            }
         }
     }
 }
@@ -93,10 +81,6 @@
 
 .main {
     &__segunda-seccion {
-        article {
-            background-color: rgb(46, 46, 46);
-        }
-
         h2 {
             background-color: rgb(64, 60, 68);
             color: rgb(211, 163, 200);
@@ -105,14 +89,18 @@
             padding: 3px;
         }
 
-        img {
-            width: 85vw;
+        article {
+            background-color: rgb(46, 46, 46);
+
+            img {
+                width: 85vw;
+
+                .armado-2 {
+                    display: none;
+                }
+            }
         }
     }
-}
-
-.armado-2 {
-    display: none;
 }
 
 @media (max-width: 950px) {
@@ -148,25 +136,16 @@
             width: 300px;
             margin: 10px;
             padding: 6px;
-        }
 
-        h2 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            h3 {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(0, 0, 0);
+            }
 
-        }
-
-        h3 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        img {
-            width: 285px;
-        }
-
-        h3 {
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: rgb(0, 0, 0);
+            img {
+                width: 285px;
+            }
         }
     }
 }

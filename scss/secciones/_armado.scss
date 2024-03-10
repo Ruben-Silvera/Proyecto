@@ -1,46 +1,53 @@
 .armado {
     background-color: rgb(64, 60, 68);
 
-    h1 {
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(207, 121, 189);
-        margin: 20px 0px 0px 0px;
-    }
-
     section {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-    }
 
-    article {
-        display: inline-block;
-        margin: 10px;
-        background-color: rgb(204, 202, 206);
-    }
 
-    h2 {
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(0, 0, 0);
-    }
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(207, 121, 189);
+            margin: 20px 0px 0px 0px;
+        }
 
-    img {
-        width: 160px;
-    }
+        article {
+            display: inline-block;
+            margin: 10px;
+            background-color: rgb(204, 202, 206);
 
-    &__encabezado{
+            h2 {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgb(0, 0, 0);
+            }
+
+            img {
+                width: 160px;
+            }
+        }
+    }
+}
+
+.armado {
+    &__encabezado {
         h1 {
             text-align: center;
             color: rgb(0, 0, 0);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: rgb(64, 60, 68);
         }
+
         img {
             width: 95vw;
-        }  
+        }
     }
+}
+
+.armado {
     &__hardware {
         img {
             width: 90vw;
@@ -48,12 +55,16 @@
             background-color: rgb(204, 202, 206);
         }
     }
+}
+
+.armado {
     &__video {
         iframe {
             width: 50vw;
         }
     }
 }
+
 
 .p-armado-2,
 .p-armado-3 {
@@ -65,6 +76,7 @@
     .armado__encabezado img {
         width: 100vw;
     }
+
     .armado__video iframe {
         width: 87vw;
         padding: 8px 40px;
@@ -98,6 +110,7 @@
         width: 93vw;
         padding: 8px 12px;
     }
+
     .armado__video iframe {
         width: 93vw;
         padding: 8px 12px;
@@ -117,13 +130,16 @@
     .armado img {
         width: 125px;
     }
+
     .armado__hardware img {
         width: 93vw;
         padding: 8px 12px;
-    }   
+    }
+
     .armado__encabezado img {
         width: 100vw;
     }
+
     .armado__video iframe {
         width: 100vw;
     }
