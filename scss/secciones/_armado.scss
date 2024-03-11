@@ -6,6 +6,9 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: rgb(207, 121, 189);
         margin: 20px 0px 0px 0px;
+        animation-name: latido;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
     }
 
     section {
@@ -27,7 +30,7 @@
     }
 
     img {
-        width: 160px;
+        width: 160px;    
     }
 
     &__encabezado{

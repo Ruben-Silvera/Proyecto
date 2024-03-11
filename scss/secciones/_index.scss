@@ -13,6 +13,9 @@
         text-align: center;
         text-decoration: solid;
         margin: 20px 0px 0px 0px;
+        animation-name: latido;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
     }
 
     img {
@@ -20,17 +23,21 @@
     }
 
     h2 {
-        padding: 15px;
         background-color: rgb(64, 60, 68);
         color: rgb(211, 163, 200);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding: 3px;
+        animation-name: latido;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
     }
 }
-
+ 
 .promocion-2,
 .promocion-3 {
     display: none;
 }
-
 
 @media (max-width: 1000px) {
     .main img {
@@ -95,14 +102,6 @@
     &__segunda-seccion {
         article {
             background-color: rgb(46, 46, 46);
-        }
-
-        h2 {
-            background-color: rgb(64, 60, 68);
-            color: rgb(211, 163, 200);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: center;
-            padding: 3px;
         }
 
         img {
