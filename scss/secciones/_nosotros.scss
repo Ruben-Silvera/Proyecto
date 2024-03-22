@@ -1,4 +1,6 @@
 .nosotros {
+    overflow-x: hidden;
+    overflow-y: hidden;
     h1 {
         color: aliceblue;
         background-color: rgb(64, 60, 68);
@@ -34,21 +36,23 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        padding: 0px 0px 10px 0px;
+
     }
 
     img {
-        width: 80vw;
+        width: 54vw;
     }
+}
+
+.nosotros article:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 5px 5px;
+
 }
 
 @media (max-width: 600px) {
     .nosotros p {
-        margin: 60px;
-    }
-}
-
-@media (max-width: 500px) {
-    .nosotros p {
-        margin: 20px;
+        margin: 10px;
     }
 }

@@ -1,93 +1,98 @@
 .footer {
-    background-color: rgb(70, 70, 70);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: linear-gradient(rgba(39, 39, 39, 0.808), rgb(34, 34, 34) );
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  overflow-x: hidden;
+  
+  article {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px;
-  
-    article {
-      display: flex;
-    }
-  
-    ul {
-      padding: 4px;
-      margin: 0px;
-      text-decoration: none;
-    }
-  
-    li {
-      list-style: none;
-    }
-  
-    img {
-      width: 40px;
-    }
-  
-    a {
-      color: rgb(221, 147, 196);
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 20px;
-  
-      &:hover {
-        color: rgb(0, 0, 0);
-      }
+  }
+
+  ul {
+    padding: 4px;
+    margin: 0px;
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  img {
+    width: 40px;
+  }
+
+  a {
+    color: rgb(221, 147, 196);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+      color: rgb(0, 0, 0);
     }
   }
-  
-  .instagram-2, .facebook-2, .wpp-2 {
+}
+
+.instagram-2,
+.facebook-2,
+.wpp-2 {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    background-image:  none;
+    background-image: linear-gradient(rgba(221, 147, 196, 0.315), rgb(221, 147, 196) );
+
+    a {
+      color: rgb(56, 54, 55);
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  .instagram-1 {
     display: none;
   }
-  
-  @media (max-width: 1000px) {
-    .footer {
-      background-color: rgb(221, 147, 196);
-  
-      a {
-        color: rgb(56, 54, 55);
-        font-weight: bold;
-        font-size: 20px;
-      }
+
+  .instagram-2 {
+    display: block;
+  }
+
+  .facebook-1 {
+    display: none;
+  }
+
+  .facebook-2 {
+    display: block;
+  }
+
+  .wpp-1 {
+    display: none;
+  }
+
+  .wpp-2 {
+    display: block;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .footer {
+    justify-content: center;
+    width: 100%;
+
+    a {
+      color: rgb(56, 54, 55);
+      font-size: 15px;
     }
-  
-    .instagram-1 {
+
+    li {
       display: none;
-    }
-  
-    .instagram-2 {
-      display: block;
-    }
-  
-    .facebook-1 {
-      display: none;
-    }
-  
-    .facebook-2 {
-      display: block;
-    }
-  
-    .wpp-1 {
-      display: none;
-    }
-  
-    .wpp-2 {
-      display: block;
     }
   }
-  
-  @media (max-width: 650px) {
-    .footer {
-      justify-content: center;
-      width: 100vw;
-  
-      a {
-        color: rgb(56, 54, 55);
-        font-size: 15px;
-      }
-  
-      li {
-        display: none;
-      }
-    }
-  }
+}

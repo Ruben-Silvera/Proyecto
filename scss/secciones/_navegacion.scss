@@ -1,4 +1,5 @@
 .nav {
+    background-image: linear-gradient(rgb(48, 48, 48) , rgba(70, 70, 70, 0.651) );
     background-color: rgb(70, 70, 70);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
@@ -30,7 +31,8 @@
 
 @media (max-width: 1000px) {
     .nav {
-        background-color: rgb(221, 147, 196);
+        background-image: none;
+        background-image: linear-gradient(rgb(221, 147, 196) , rgb(252, 188, 231));
         justify-content: center;
         flex-direction: column;
         padding: 10px;
@@ -43,29 +45,53 @@
         }
 
         ul {
-            width: 98vw;
+            width: 98%;
             justify-content: center;
             box-shadow: 0px 13px 12px 0px;
             margin-bottom: 10px;
             flex-wrap: wrap;
+            width: 95vw;
         }
     }
 }
 
 @media (max-width: 800px) {
+
     .nav ul {
         width: 95vw;
     }
+    .gris {
+        background-color: rgb(70, 70, 70);
+    }
 }
 
-.gris {
-    background-color: rgb(70, 70, 70);
+
+@media (max-width: 700px) {
+    .nav ul {
+        width: 93vw;
+    }
 }
+@media (max-width: 500px) {
+    .nav ul {
+        width: 90vw;
+    }
+}
+@media (max-width: 350px) {
+    .nav ul {
+        width: 48vw;
+    }
+}
+
 /* ------------Editando Boorstrap------------ */
 div.container-fluid.nav:first-child {
     --bs-gutter-x: 0rem;
+    --bs-navbar-padding-y: 0.5rem;
 }
 
 .orientacion {
     justify-content: flex-end;
 }
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0rem;
+    }
