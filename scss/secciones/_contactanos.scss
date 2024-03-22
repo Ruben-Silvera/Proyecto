@@ -59,25 +59,45 @@
     }
 }
 
-.Formulario article {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 10px;
-}
-
-button {
-    width: 100%;
-    padding: 15px;
-    background-color: rgb(185, 67, 176);
-    color: white;
-    border: none;
+.Formulario {
+    padding: 20px;
+    background-color: rgb(204, 202, 206);
+    margin: 20px;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        background-color: rgb(185, 67, 176);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: rgb(150, 47, 146);
+    }
 }
 
 .Maps {
@@ -108,7 +128,6 @@ button {
         gap: 0px 0px;
         grid-template-areas: "Maps Maps Maps" "Formulario Formulario Formulario" "instagram facebook wpp";
     }
-
 
     .contactanos img {
         width: 21vw;
@@ -145,10 +164,6 @@ button {
             padding: 17px;
             margin: 10px;
         }
-    }
-    section {
-        padding: 17px;
-        margin: 10px;
     }
 
     .Maps iframe {
