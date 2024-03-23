@@ -320,7 +320,7 @@ div.container-fluid.nav:first-child {
 
 .tienda {
   background-color: #403c44;
-  overflow-y: hidden; }
+  overflow-x: hidden; }
   .tienda img {
     width: 100vw; }
   .tienda section {
