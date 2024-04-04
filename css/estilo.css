@@ -326,9 +326,7 @@ div.container-fluid.nav:first-child {
   .tienda section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px;
-    padding: 40px; }
+    justify-content: space-around; }
   .tienda h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -339,7 +337,7 @@ div.container-fluid.nav:first-child {
     animation-duration: 5s;
     animation-iteration-count: 2; }
   .tienda article {
-    margin: 40px; }
+    margin: 50px; }
   .tienda__producto p {
     text-align: center;
     color: black; }
@@ -369,6 +367,12 @@ div.container-fluid.nav:first-child {
     display: none; }
   .tienda-2 {
     display: block; } }
+
+@media (max-width: 390px) {
+  .tienda article {
+    margin: 10px; }
+  .producto {
+    margin: 0px; } }
 
 .nosotros {
   overflow-x: hidden;

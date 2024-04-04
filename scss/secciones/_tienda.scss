@@ -10,8 +10,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 30px;
-        padding: 40px;
     }
 
     h1 {
@@ -26,7 +24,7 @@
     }
 
     article {
-        margin: 40px;
+        margin: 50px;
     }
 
     &__producto {
@@ -73,5 +71,14 @@
 
     .tienda-2 {
         display: block;
+    }
+}
+
+@media (max-width: 390px) {
+    .tienda article {
+        margin: 10px;
+    }
+    .producto {
+        margin: 0px;
     }
 }
